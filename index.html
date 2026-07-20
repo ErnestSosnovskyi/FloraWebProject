@@ -19,10 +19,10 @@
       referrerpolicy="no-referrer"
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
-    <header class="header" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
+    <header class="header">
       <div class="container">
         <div class="header-section">
           <a href="#" class="header-logo">
@@ -39,7 +39,12 @@
               <li class="navigation-link"><a href="#contacts">Contacts</a></li>
             </ul>
           </nav>
-          <button type="button" class="explore-button">Explore Bouquets</button>
+          <div class="header-buttons">
+            <button type="button" class="explore-button header-button">Explore Bouquets</button>
+            <button type="button" class="menu-button">
+              <svg class="menu-button-icon"><use href="./icons/sprite.svg#icon-menu" /></svg>
+            </button>
+          </div>
         </div>
       </div>
     </header>
@@ -54,7 +59,7 @@
           <button type="button" class="explore-button explore-button__big">Explore Our Bestsellers</button>
         </div>
       </section>
-      <section id="about" class="section-wrapper" data-aos="fade-up" data-aos-duration="1500">
+      <section id="about" class="section-wrapper" data-aos="fade-left" data-aos-duration="1500">
         <div class="container">
           <div class="about-description">
             <svg width="96px" height="85px">
@@ -72,12 +77,10 @@
       <section
         id="bestsellers"
         class="section-wrapper"
-        data-aos="fade-down"
-        data-aos-easing="linear"
-        data-aos-duration="1500"
+        data-aos="fade-right" data-aos-duration="1500"
       >
         <div class="container">
-          <h2 class="title">Top-Selling Bouquets</h2>
+          <h2 class="title bestseller-title">Top-Selling Bouquets</h2>
           <ul class="bestsellers-list">
             <li>
               <img src="images/perfect-gift.webp" alt="Perfect Gift" class="bestseller-image" />
@@ -117,7 +120,7 @@
           </ul>
         </div>
       </section>
-      <section id="bouquets" class="section-wrapper" data-aos="zoom-in-up" data-aos-duration="1500">
+      <section id="bouquets" class="section-wrapper" data-aos="fade-left" data-aos-duration="1500">
         <div class="container">
           <h2 class="title center-title">Bouquets</h2>
           <p class="text bouquets-description">Explore our stunning selection of fresh flower bouquets.</p>
@@ -166,7 +169,7 @@
           <button type="button" class="explore-button show-more">Show More</button>
         </div>
       </section>
-      <section id="feedback" class="section-wrapper" data-aos="fade-down" data-aos-duration="1500">
+      <section id="feedback" class="section-wrapper" data-aos="fade-right" data-aos-duration="1500">
         <div class="container">
           <h2 class="title center-title">What our clients says</h2>
           <ul class="feedback-list">
@@ -201,7 +204,7 @@
           </ul>
         </div>
       </section>
-      <section id="contacts" class="section-wrapper" data-aos="fade-up" data-aos-duration="1500">
+      <section id="contacts" class="section-wrapper" data-aos="fade-left" data-aos-duration="1500">
         <div class="container">
           <div class="contacts">
             <div class="contacts-description">
@@ -236,7 +239,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer footer-section" data-aos="fade-up" data-aos-duration="1000">
+    <footer class="footer footer-section">
       <div class="container">
         <div class="footer-main">
           <a href="#" class="footer-logo-link">

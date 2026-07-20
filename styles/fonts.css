@@ -2,6 +2,9 @@
     --navigation: 16px;
     --regular: 18px;
     --price: 20px;
-    --title: 48px;
-    --hero-title: 56px;    
+    --bestseller-title: 32px;
+    --title: 34px;
+    --hero-title: 36px;
+    --title-desktop: 48px;
+    --hero-title-desktop: 56px;  
 }

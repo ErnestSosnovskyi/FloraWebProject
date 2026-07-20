@@ -23,3 +23,30 @@ img {
     width: 100%;
     height: 100%;
 }
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--primary-bg);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-button-bg);
+    border-radius: 100px;
+    border: 3px solid var(--primary-bg);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-button-active);
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: #3A4039;
+}
+
+html {
+    scrollbar-width: thin;
+    scrollbar-color: var(--primary-button-bg) var(--primary-bg);
+}

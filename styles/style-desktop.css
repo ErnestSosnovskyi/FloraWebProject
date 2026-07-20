@@ -9,6 +9,7 @@ body {
     letter-spacing: 0%;
     background-color: var(--primary-bg);
     color: var(--primary-text);
+    overflow-x: hidden;
 }
 
 .container {
@@ -117,6 +118,8 @@ h4 {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .hero-image {
@@ -266,7 +269,7 @@ h4 {
     flex-direction: column;
     justify-content: space-between;
     padding: 32px 21px 32px 32px;
-    border: 1px solid var(--Color-Scheme-1-Border, var(--primary-border));
+    border: 1px solid varvar(--primary-border);
     border-radius: 16px;
 }
 
