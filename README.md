@@ -54,7 +54,7 @@ FloraWebProject/
 ## Setup & Running Locally
 1. Clone the repository to your local machine:
 ```bash
-git clone https://github.com/ErnestSosnovskyi/FloraWebProject.git
+git clone https://github.com/ErnestSosnovskyi/UMT-markup-practice_P1_Sosnovskyi.git
 ```
 2. Navigate to the project directory:
 ```bash
