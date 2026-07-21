@@ -18,7 +18,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
@@ -41,8 +41,17 @@
           </nav>
           <div class="header-buttons">
             <button type="button" class="explore-button header-button">Explore Bouquets</button>
-            <button type="button" class="menu-button">
-              <svg class="menu-button-icon"><use href="./icons/sprite.svg#icon-menu" /></svg>
+            <button
+              type="button"
+              class="menu-button"
+              aria-expanded="false"
+              aria-controls="mobile-menu"
+              data-menu-button
+            >
+              <svg class="menu-button-icon" aria-label="Mobile menu toggle">
+                <use href="./icons/sprite.svg#icon-menu" class="menu-button-icon__burger" />
+                <use href="./icons/sprite.svg#icon-x" class="menu-button-icon__close" />
+              </svg>
             </button>
           </div>
         </div>
@@ -50,7 +59,7 @@
     </header>
     <main>
       <section id="hero" class="hero">
-        <div class="container" data-aos="fade-right" data-aos-duration="1500">
+        <div class="container">
           <h1 class="hero-title">Brighten Your Day with Our Stunning Bouquets</h1>
           <p class="text hero-text">
             At Flora, we believe that every occasion deserves a beautiful bouquet. Our expertly crafted arrangements are
@@ -59,7 +68,7 @@
           <button type="button" class="explore-button explore-button__big">Explore Our Bestsellers</button>
         </div>
       </section>
-      <section id="about" class="section-wrapper" data-aos="fade-left" data-aos-duration="1500">
+      <section id="about" class="section-wrapper">
         <div class="container">
           <div class="about-description">
             <svg width="96px" height="85px">
@@ -74,28 +83,24 @@
           <img src="images/elevated-view.webp" class="about-image" alt="florist-flowers" />
         </div>
       </section>
-      <section
-        id="bestsellers"
-        class="section-wrapper"
-        data-aos="fade-right" data-aos-duration="1500"
-      >
+      <section id="bestsellers" class="section-wrapper">
         <div class="container">
           <h2 class="title bestseller-title">Top-Selling Bouquets</h2>
           <ul class="bestsellers-list">
             <li>
               <img src="images/perfect-gift.webp" alt="Perfect Gift" class="bestseller-image" />
-              <h4 class="bouquet-title">Spring Elegance</h4>
-              <h4 class="bouquet-price">$35</h4>
+              <h3 class="bouquet-title">Spring Elegance</h3>
+              <h3 class="bouquet-price">$35</h3>
             </li>
             <li>
               <img src="images/bridal-closeup.webp" alt="Bridal Closeup" class="bestseller-image" />
-              <h4 class="bouquet-title">Berry Chic</h4>
-              <h4 class="bouquet-price">$40</h4>
+              <h3 class="bouquet-title">Berry Chic</h3>
+              <h3 class="bouquet-price">$40</h3>
             </li>
             <li>
               <img src="images/mixed-flower.webp" alt="Mixed Flower" class="bestseller-image" />
-              <h4 class="bouquet-title">Lavender Dream</h4>
-              <h4 class="bouquet-price">$55</h4>
+              <h3 class="bouquet-title">Lavender Dream</h3>
+              <h3 class="bouquet-price">$55</h3>
             </li>
           </ul>
           <ul class="pagination-dots">
@@ -120,56 +125,56 @@
           </ul>
         </div>
       </section>
-      <section id="bouquets" class="section-wrapper" data-aos="fade-left" data-aos-duration="1500">
+      <section id="bouquets" class="section-wrapper">
         <div class="container">
           <h2 class="title center-title">Bouquets</h2>
           <p class="text bouquets-description">Explore our stunning selection of fresh flower bouquets.</p>
           <ul class="catalog-list">
             <li class="catalog-list-item">
               <img src="images/bouquet_1.webp" alt="Peach Meadow" class="bouquet-image" />
-              <h4 class="bouquet-title">Peach Meadow</h4>
-              <h4 class="bouquet-price">$55</h4>
+              <h3 class="bouquet-title">Peach Meadow</h3>
+              <h3 class="bouquet-price">$55</h3>
             </li>
             <li class="catalog-list-item">
               <img src="images/bouquet_2.webp" alt="Blush Romance" class="bouquet-image" />
-              <h4 class="bouquet-title">Blush Romance</h4>
-              <h4 class="bouquet-price">$34</h4>
+              <h3 class="bouquet-title">Blush Romance</h3>
+              <h3 class="bouquet-price">$34</h3>
             </li>
             <li class="catalog-list-item">
               <img src="images/bouquet_3.webp" alt="Pastel Garden" class="bouquet-image" />
-              <h4 class="bouquet-title">Pastel Garden</h4>
-              <h4 class="bouquet-price">$40</h4>
+              <h3 class="bouquet-title">Pastel Garden</h3>
+              <h3 class="bouquet-price">$40</h3>
             </li>
             <li class="catalog-list-item">
               <img src="images/bouquet_4.webp" alt="Tulip Charm" class="bouquet-image" />
-              <h4 class="bouquet-title">Tulip Charm</h4>
-              <h4 class="bouquet-price">$61</h4>
+              <h3 class="bouquet-title">Tulip Charm</h3>
+              <h3 class="bouquet-price">$61</h3>
             </li>
             <li class="catalog-list-item">
               <img src="images/bouquet_5.webp" alt="Berry Bloom" class="bouquet-image" />
-              <h4 class="bouquet-title">Berry Bloom</h4>
-              <h4 class="bouquet-price">$32</h4>
+              <h3 class="bouquet-title">Berry Bloom</h3>
+              <h3 class="bouquet-price">$32</h3>
             </li>
             <li class="catalog-list-item">
               <img src="images/bouquet_6.webp" alt="Sweet Whisper" class="bouquet-image" />
-              <h4 class="bouquet-title">Sweet Whisper</h4>
-              <h4 class="bouquet-price">$40</h4>
+              <h3 class="bouquet-title">Sweet Whisper</h3>
+              <h3 class="bouquet-price">$40</h3>
             </li>
             <li class="catalog-list-item">
               <img src="images/bouquet_7.webp" alt="Field Joy" class="bouquet-image" />
-              <h4 class="bouquet-title">Field Joy</h4>
-              <h4 class="bouquet-price">$49</h4>
+              <h3 class="bouquet-title">Field Joy</h3>
+              <h3 class="bouquet-price">$49</h3>
             </li>
             <li class="catalog-list-item">
               <img src="images/bouquet_8.webp" alt="Soft Bloom" class="bouquet-image" />
-              <h4 class="bouquet-title">Soft Bloom</h4>
-              <h4 class="bouquet-price">$37</h4>
+              <h3 class="bouquet-title">Soft Bloom</h3>
+              <h3 class="bouquet-price">$37</h3>
             </li>
           </ul>
           <button type="button" class="explore-button show-more">Show More</button>
         </div>
       </section>
-      <section id="feedback" class="section-wrapper" data-aos="fade-right" data-aos-duration="1500">
+      <section id="feedback" class="section-wrapper">
         <div class="container">
           <h2 class="title center-title">What our clients says</h2>
           <ul class="feedback-list">
@@ -177,17 +182,17 @@
               <p class="text feedback-text">
                 "Flora made my anniversary unforgettable with their beautiful arrangement!"
               </p>
-              <h5>Emma T.</h5>
+              <h3 class="feedback-author">Emma T.</h3>
             </li>
             <li class="feedback-item">
               <p class="text feedback-text">
                 Absolutely stunning bouquet! It looked even better than the photo and arrived right on time.
               </p>
-              <h5>Daniel R.</h5>
+              <h3 class="feedback-author">Daniel R.</h3>
             </li>
             <li class="feedback-item">
               <p class="text feedback-text">The service was exceptional, and the flowers were fresh!</p>
-              <h5>Olivia M.</h5>
+              <h3 class="feedback-author">Olivia M.</h3>
             </li>
           </ul>
           <ul class="pagination-buttons pagination-right">
@@ -204,11 +209,11 @@
           </ul>
         </div>
       </section>
-      <section id="contacts" class="section-wrapper" data-aos="fade-left" data-aos-duration="1500">
+      <section id="contacts" class="section-wrapper">
         <div class="container">
           <div class="contacts">
             <div class="contacts-description">
-              <h5 class="contacts-connect">Connect</h5>
+              <p class="contacts-connect">Connect</p>
               <h2 class="title contacts-title">Get in Touch</h2>
               <p class="text">We’re here to assist you with all your floral needs and inquiries.</p>
             </div>
@@ -219,7 +224,7 @@
                     <use href="./icons/sprite.svg#icon-phone"></use>
                   </svg>
                   <p class="text">Phone</p>
-                  <a href="tel:+1(555) 123-4567" class="navigation-link contacts-phone">+1 (555) 123-4567</a>
+                  <a href="tel:+15551234567" class="navigation-link contacts-phone">+1 (555) 123-4567</a>
                 </li>
                 <li>
                   <svg width="24" height="24">
@@ -280,9 +285,18 @@
         <p class="copyright">&copy; 2026 Flora. All rights reserved.</p>
       </div>
     </footer>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
+    <div class="mobile-menu" id="mobile-menu" aria-labelledby="Mobile menu toggle" data-menu>
+      <nav class="menu-navigation">
+        <ul class="menu-navigation-list">
+          <li class="mobile-navigation-link"><a href="#about">About Us</a></li>
+          <li class="mobile-navigation-link"><a href="#bestsellers">Bestsellers</a></li>
+          <li class="mobile-navigation-link"><a href="#bouquets">Bouquets</a></li>
+          <li class="mobile-navigation-link"><a href="#feedback">Feedback</a></li>
+          <li class="mobile-navigation-link"><a href="#contacts">Contacts</a></li>
+        </ul>
+      </nav>
+      <button type="button" class="explore-button menu-action-button">Explore Bouquets</button>
+    </div>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

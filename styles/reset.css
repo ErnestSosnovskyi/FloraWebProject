@@ -47,6 +47,11 @@ img {
 }
 
 html {
+    scroll-behavior: smooth;
     scrollbar-width: thin;
     scrollbar-color: var(--primary-button-bg) var(--primary-bg);
+}
+
+html:has(body.menu-open) {
+    overflow: hidden;
 }
